@@ -1,0 +1,36 @@
+# src/main.py
+
+def mostrar_menu():
+    print("\n" + "=" * 62)
+    print("  Plataforma de Monitorização de Indicadores de Saúde")
+    print("=" * 62)
+    print("   1. Carregar datasets")
+    print("   2. Listar países")
+    print("   3. Consultar indicadores de um país / ano")
+    print("   4. Comparar indicadores entre países")
+    print("   5. Criar meta de saúde")
+    print("   6. Listar metas")
+    print("   7. Editar meta")
+    print("   8. Apagar meta")
+    print("   9. Visualizar países que cumprem uma meta selecionada")
+    print("   0. Sair")
+    print("=" * 62)
+
+
+def main():
+    while True:
+        mostrar_menu()
+        opcao = input("Escolha uma opção: ").strip()
+
+        if opcao == "0":
+            print("A sair da plataforma. Até breve!")
+            break
+        elif opcao in [str(i) for i in range(1, 10)]:
+            print(f"Opção {opcao} selecionada (ainda não implementada).")
+        else:
+            print("Opção inválida. Tente novamente.")
+
+
+if __name__ == "__main__":
+    main()
+
