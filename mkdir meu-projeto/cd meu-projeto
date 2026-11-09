@@ -1,6 +1,0 @@
-git init
-Initialized empty Git repository
-echo "O meu primeiro ficheiro Git" > arquivo.txt
-git status
-git rm --cached arquivo.txt
-
